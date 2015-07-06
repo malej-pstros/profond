@@ -1,0 +1,126 @@
+$footer-height:     150px;
+$footer-margin: 1px;
+
+$footer-napistenam-height: 34px; 
+$footer-napistenam-width:  95%;
+$footer-napistenam-margin-top: 7px;
+$footer-napistenam-margin-bottom: 9px;
+
+
+.nav-custom {
+line-height: $nav-custom-fontsize ;
+font-size:   $nav-custom-fontsize ;
+}
+
+
+.footersegment {
+    height: $footer-height;   /* Height of the footer */
+    color: white;
+    margin-top: $footer-margin;
+    margin-bottom: $footer-margin;
+}
+
+@media screen and (max-width: $screen-md-min){
+    .firstextrablock{
+        background-color: #00325E !important;
+    }
+    @media screen and (min-width: $screen-sm-min){
+        .thetextaligningproperty {
+            text-align: center !important;
+        }
+    }
+}
+
+@media screen and (max-width: $screen-sm-min){
+    .secondextrablock{
+        background-color: #00325E !important;
+    }
+}
+
+.inlineblock {
+    ul {
+        list-style-type: none;
+        li {
+            margin: 0px 0px;
+            //display: block;
+            //float: left;
+            line-height: 25px;
+            i {
+                width: 25px;
+            }
+        }
+      margin: 0px 0px;
+    }
+    vertical-align: top;
+    display: inline-block;
+    a {
+        color: white;
+        text-decoration: none;
+        &:mailto {text-decoration: none;}
+         
+    }
+    
+}
+.site-footer{
+    padding: 13px 0px 0px 0px;
+}
+.napistenam {
+    border: 1px solid white; 
+    border-radius: 3px; 
+    width: $footer-napistenam-width; 
+    height: $footer-napistenam-height;
+    font-weight:bolder;
+    line-height: $footer-napistenam-height;
+    margin-bottom: $footer-napistenam-margin-bottom;
+    margin-top: $footer-napistenam-margin-top;
+    text-align:center;
+    font-size: 1.2em;
+
+        a i {
+        width:20px;
+        text-align:center;
+        font-size: 0.85em;
+
+        }
+    &:hover {
+        text-decoration: none; color: #1AA9D0;
+        color: #00325E ;
+        background-color: white ;
+        border-color: black ;
+        a {
+            color: #00325E;
+            text-decoration: none;
+            text-align:center;
+        }
+    }
+}
+
+
+.block {
+    min-height:50px;
+    width:100%;
+    
+    
+}
+
+.link { 
+    text-decoration: none;
+    &:mailto {text-decoration: none;}
+    &:hover { text-decoration: none;}
+}
+
+.fullwidthbgcolor {
+    position: absolute;
+    height: $footer-height;
+    width: 100000%;
+    margin-left:-1000%;
+    background-color: $darkbluecolor;
+    z-index:-1000;
+    margin-top:-13px;
+}
+
+.page-content {
+    padding-top: 0px !important;
+    margin-top: -20px;
+    width:100%;
+}
