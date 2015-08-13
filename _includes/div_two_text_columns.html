@@ -1,0 +1,39 @@
+<!--
+//$height = vejška řádku
+
+//$text1, $text2 = text v levym a pravym sloupci
+//$textcolor1, $textcolor2 = ...
+//$textsize1, $textsize2 = ...
+//$valign1, $valign2 = vertival align
+//---top
+//---bottom
+//---middle OR center
+//$halign1, $halign2 = horizontal align
+//---left
+//---right
+//---middle OR center
+
+
+
+-->
+
+<div style="background-color: {{include.bgcolor}}">
+    <div class="container">
+        <div class="row" style=" height: {{include.height}};">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 maingrid ">
+                <div class="innergrid table" style="padding-top: 10px">
+                    <div class="tablecell {{include.valign1}}v {{include.halign1}}h" style="color: {{include.textcolor1}}; ">
+                       <p style="font-size:{{include.textsize1}};"> {{include.text1}} </p>         
+                    </div> 
+                </div>
+            </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 maingrid font-size={{include.textsize2}}">
+                <div class="innergrid table" style="padding-top: 10px">
+                    <div class="tablecell {{include.valign2}}v {{include.halign2}}h">  
+                       <p style="font-size:{{include.textsize2}};"> {{include.text2}} </p>         
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

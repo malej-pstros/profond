@@ -1,0 +1,28 @@
+<!--
+//$height = vejška řádku
+//$text
+//$textcolor1, $textcolor2 = ...
+//$textsize1, $textsize2 = ...
+//$valign1, $valign2 = vertival align
+//---top
+//---bottom
+//---middle OR center
+//$halign1, $halign2 = horizontal align
+//---left
+//---right
+//---middle OR center
+-->
+
+<div style="background-color: {{include.bgcolor}}" id="{{include.id}}">
+    <div class="container">
+        <div class="row" style=" height: {{include.height}};">
+             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 maingrid ">
+                <div class="innergrid tablekek" >
+                    <div class="tablecell {{include.valign}}v {{include.halign}}h">  
+                       <p style="font-size:{{include.textsize}}; color:{{include.textcolor}}; margin: 0px 0px"> {{include.text}} </p>         
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

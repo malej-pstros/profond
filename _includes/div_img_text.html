@@ -1,0 +1,64 @@
+<!--
+//$bgcolor
+//$height
+//$reverse = 1 pro obrázek vpravo
+//$tcolor
+//$imageurl
+//$border = image border
+//$borderradius = image border radius
+//$tvalign, thalign = text h/v align
+//$tsize
+
+{% comment %} --- DIV_IMG_TEXT.HTML --- 
+    {% assign height2     = "" %}
+    {% assign bgcolor2    = "" %}
+    {% assign textcolor2  = "" %}
+    {% assign textsize2   = "" %}
+    {% assign text2       = "" %}
+    {% assign tvalign2    = "" %}
+    {% assign thalign2    = "" %}
+    {% assign reverse2    = "" %}
+
+    {% assign imgurl2     = "../_media/" %}
+    {% assign border2     = "" %}
+    {% assign bradius2    = "" %}
+{% endcomment %}
+-->
+<div class="img_text" style="background-color:{{include.bgcolor}}">
+    <div class="container">
+        <div class="row" style="height:{{include.height}};">
+            
+            {% capture image %}
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 maingrid ">
+                <div class="innergrid {% if include.reverse == "1"%} right {%else%} left {%endif%} table">
+                    <div class="tablecell middlev" style="color: {{include.tcolor}}">
+                       <img class="img_text_pic" src="{{include.imageurl}}" alt="Y U NO LOADING" style="{% if include.reverse == "1" %} margin-left: 0px; {%endif%} border: {{include.border}}; border-radius:{{include.borderradius}}; ">           
+                    </div>                
+                </div>
+            </div>
+            {% endcapture %}
+            
+            {% capture text %}
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 maingrid ">
+                <div class="innergrid {% if include.reverse == "1"%} left {%else%} right {%endif%} table" style="padding-top: 10px">
+                    <div class="tablecell {{include.tvalign}}v {{include.thalign}}h" style="color: {{include.tcolor}}">
+                       <p> {{include.thetext}} </p>         
+                    </div> 
+                </div>
+            </div>
+            
+        
+            {% endcapture %}
+            
+            {% if include.reverse == "1" %}
+                {{text}} {{image}}
+            {% else %}
+                {{image}} {{text}}
+            {% endif %}
+            
+            
+        </div>
+        
+        
+    </div>
+</div>
