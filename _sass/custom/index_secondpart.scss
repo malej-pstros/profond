@@ -1,0 +1,273 @@
+#secondpart{
+    margin-top: -10px;
+
+    > #partdevider {
+        background-color: #414D5C ;
+        height: 85px;
+        width: 100%;
+        top: 798px;
+        
+        > .container {
+            height: 100%;
+            > .tablekek{
+                height: 100%;
+                width: 100%;
+                > .tablecell {
+        
+                    font-size: 35px;
+                    color: #FEFEFE;
+                    margin: 0px 0px;
+                    vertical-align: middle;
+                    font-weight: 700;
+                    text-align: center;
+                    
+                    > .thetext { margin: 0px 530px; }
+                    
+                    &:hover{
+                        font-size: 40px;
+                        > .thetext { margin: 0px 513px;}
+                    }
+                }
+            }
+        }
+        
+        &:hover{
+            background-color: #4D5C6D ;
+    
+        }
+    }
+    > #sp_greetings {
+        height: 350px;
+        width: 100%;
+        > .container {
+            background-color: #FEFEFE;
+
+            height: 100%;
+            > .tablekek {
+                height: 100%;
+                width: 100%;
+                padding: 20px;
+                > .tablecell {
+                    font-size: 40px;
+                    color: $darkbluecolor;
+                    line-height: 150%;
+ 
+                }
+            }
+        }
+        
+    }
+    
+    > #sp_greetings_picture {
+        height: 320px;
+        width: 100%;
+        margin-top: 0px;
+        background-color: #FEFEFE;
+        margin-bottom: 30px;
+        > .container {
+            border: 1px dotted black;
+            height: 100%;
+            > .tablekek {
+                height: 100%;
+                width: 100%;
+                padding: 20px;
+                > .tablecell {
+                    font-size: 40px;
+                    color: $firstorange;
+                    line-height: 150%;
+ 
+                }
+            }
+        }
+        
+    }
+    
+    > #sp_conabizime {
+        margin-top: 20px;
+        height: 550px;
+        width: 100%;
+        margin-top: 0px;
+        background-color: $nicegreycolor;
+        > .container {
+            height: 100%;
+            padding: 70px 0px;
+            > .row {
+                height: 100%;
+                > div {
+                    height: 100%;
+                    padding: 0px 20px;
+                    > .tablekek {
+                        height: 100%;
+                        width: 100%;
+                        > .img { float: right;}
+
+                        > .tablecell {
+                            
+                            > .theheader {
+                                font-size: 37px;
+                                color: $firstorange;
+                                font-weight: bold;
+                            }
+                            
+                            > ul {
+                                list-style-type: none;
+                                > li {
+                                    font-size: 24px;
+                                    color: $lightbluecolor;
+                                    &:before {
+                                        content: "• ";
+                                        color: $firstorange;
+                                        font-size: 30px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+            > .tablekek {
+                height: 100%;
+                width: 100%;
+                padding: 20px;
+                > .tablecell {
+                    font-size: 40px;
+                    color: #FF9D4B;
+                    line-height: 150%;
+ 
+                }
+            }
+        }
+        
+    }
+    
+    > #sp_cochceme {
+        margin-top: 20px;
+        height: 550px;
+        width: 100%;
+        margin-top: 0px;
+        background-color: $almostwhite;
+        > .container {
+            height: 100%;
+            padding: 70px 0px;
+            > .row {
+                height: 100%;
+                > div {
+                    height: 100%;
+                    padding: 0px 20px;
+                    > .tablekek {
+                        height: 100%;
+                        width: 100%;
+                        > .img { margin-left: 0px; }
+                        
+                        > .tablecell {
+                            > .theheader {
+                                font-size: 37px;
+                                color: $darkbluecolor;
+                                font-weight: bold;
+                            }
+                            
+                            > .subheader {
+                                font-size: 27px;
+                                color: #C86B1E;
+                                font-weight: bold;
+                            }
+                            
+                            > .maintext {
+                                font-size: 22px;
+                                color: $lightbluecolor;
+                                margin-bottom: 10px;
+                                margin-left: 30%;
+                                
+                                &:nth-child(4){
+                                color: $firstorange !important;
+
+                                }
+                            }
+                            
+                            > ul {
+                                list-style-type: none;
+                                > li {
+                                    font-size: 24px;
+                                    color: $firstorange;
+                                    &:before {
+                                        content: " ";
+                                        font-size: 27px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+            > .tablekek {
+                height: 100%;
+                width: 100%;
+                padding: 20px;
+                > .tablecell {
+                    font-size: 40px;
+                    color: #FF9D4B;
+                    line-height: 150%;
+ 
+                }
+            }
+        }
+    }
+    
+    > #sp_kamdal {
+        margin-bottom:20px;
+        height: 350px;
+        > .wrappingdiv {
+            height: 120px;
+            width: 100%;
+            background-color: $lightbluecolor;
+
+            > .theheader {
+                height: 100%;
+    
+                > .tablekek {
+                    height: 100%;
+                    width: 100%;
+                    > .tablecell {
+                        font-size: 50px;
+                        font-weight: bold;
+                        color: $darkgreycolor;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        
+        
+        
+        > .router {
+            
+            border: 1px dotted black;
+            height: 300px;
+            > .tablekek {
+                height: 100%;
+                width: 100%;
+                padding: 20px;
+                > .tablecell {
+                    font-size: 40px;
+                    color: $firstorange;
+                    line-height: 150%;
+ 
+                }
+            }
+        }
+        
+    }
+    
+    
+}
+
+body{
+    background-color: #FEFEFE ! important;
+    margin-top: 80px;
+}

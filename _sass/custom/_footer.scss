@@ -112,9 +112,9 @@ font-size:   $nav-custom-fontsize ;
 .fullwidthbgcolor {
     position: absolute;
     height: $footer-height;
-    width: 100000%;
-    margin-left:-1000%;
-    background-color: $lightbluecolor;
+    width: 1000%;
+    margin-left: -1000px;
+    background-color: $nicegreycolor;
     z-index:-1000;
     margin-top:-13px;
 }

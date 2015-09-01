@@ -1,0 +1,13 @@
+#menu{
+    > .container {
+        > .navbar-header {
+            > a {
+                font-weight: bold !important;
+                > span {
+                    margin-right: 15px;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}

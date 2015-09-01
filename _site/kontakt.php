@@ -6,21 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Your awesome title</title>
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+    <meta name="description" content="">
     
     <link rel="stylesheet" href="./css/reset.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="canonical" href="http://yourdomain.com/kontakt.php">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="canonical" href="./_site./_site/kontakt.php">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../_js/jquery.fittext.js"></script>
+    
+
 
 </head>
 
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top" id="menu">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -30,56 +33,153 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" style="font-weight:bold" href="index.html">ProFond</a>
+      <a class="navbar-brand teblecell centerv centerh" href="
+
+index.php
+
+"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>ProFond</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav nav-custom navbar-blockafterlogo">
-        <li><a href="#">Link</a></li>
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav nav-custom navbar-blockafterlogo navbar navbar-right">
+        <li style ="margin-left: 180px"><a href="#">O dotacích</a></li>
+        <li><a href="
+mojedotace.php
+
+
+">"Kalkulačka"</a></li>
+
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Služby <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Co nabízíme</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">Pro soukromníky</a></li>
+            <li><a href="#">Pro firmy</a></li>
           </ul>
         </li>
+        <li><a href="kontakt.php
+
+
+
+">Kontakt</a></li>
+
       </ul>
       
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
+      
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
     
     
-        <?php 
-    echo "ahoj";
-?>
+        
     
     
+    
+    
+    
+    
+    
+    
+    
+    <!--
+//$bgcolor
+//$height
+//$reverse = 1 pro obrázek vpravo
+//$tcolor
+//$imageurl
+//$border = image border
+//$borderradius = image border radius
+//$tvalign, thalign = text h/v align
+//$tsize
+
+
+-->
+<div class="img_text" style="background-color:#FCFCFC">
+    <div class="container">
+        <div class="row" style="height:310px;">
+            
+            
+            
+            
+            
+            
+                
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 maingrid ">
+                <div class="innergrid  left  table">
+                    <div class="tablecell middlev" style="color: ">
+                       <img class="img_text_pic" src="../_media/kocka.png" alt="Y U NO LOADING" style=" border: 3px solid #424242; border-radius:3px; ">           
+                    </div>                
+                </div>
+            </div>
+             
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 maingrid ">
+                <div class="innergrid  right  table" style="padding-top: 10px">
+                    <div class="tablecell v h" style="color: ">
+                       <p> AHOJ BABI </p>         
+                    </div> 
+                </div>
+            </div>
+            
+        
+            
+            
+            
+            
+        </div>
+        
+        
+    </div>
+</div>
+
+
+<!--
+//$height = vejška řádku
+
+//$text1, $text2 = text v levym a pravym sloupci
+//$textcolor1, $textcolor2 = ...
+//$textsize1, $textsize2 = ...
+//$valign1, $valign2 = vertival align
+//---top
+//---bottom
+//---middle OR center
+//$halign1, $halign2 = horizontal align
+//---left
+//---right
+//---middle OR center
+
+
+
+-->
+
+<div style="background-color: #424242">
+    <div class="container">
+        <div class="row" style=" height: 270px;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 maingrid ">
+                <div class="innergrid table" style="padding-top: 10px">
+                    <div class="tablecell middlev centerh" style="color: white; ">
+                       <p style="font-size:18px;"> Nějakej text v prvním sloupci. Nějakej text v prvním sloupci. Nějakej text v prvním sloupci. Nějakej text v prvním sloupci. Nějakej text v prvním sloupci. Nějakej text v prvním sloupci. (jakkoliv formátovatelnej) </p>         
+                    </div> 
+                </div>
+            </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 maingrid font-size=23px">
+                <div class="innergrid table" style="padding-top: 10px">
+                    <div class="tablecell topv lefth">  
+                       <p style="font-size:23px;"> )jenletavotámrof vilokkaj( .icpuols myhurd v txet jeniJ .icpuols myhurd v txet jeniJ .icpuols myhurd v txet jeniJ .icpuols myhurd v txet jeniJ .icpuols myhurd v txet jeniJ .icpuols myhurd v txet jeniJ </p>         
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
     
     
     
 
-    <footer class="site-footer">
-  <div class="container">
+      <div class="container" style="margin-top:300px">
     
     <div class="row" style="position:relative;">
       
@@ -88,7 +188,11 @@
             <div class="fullwidthbgcolor"></div>
             <div class="inlineblock" style="width:49%; color: white;">
               <ul>
-                <li><a href="kontakt.html" class="link" style="color:white"><b>Kontaktujte nás</b></a></li>
+                <li><a href="kontakt.php
+
+
+
+" class="link" style="color:white"><b>Kontaktujte nás</b></a></li>
                 <li><i class="fa fa-phone"></i>739 154 548</li>
                 <li><i class="fa fa-envelope-o"></i><a href="mailto:info@profond.cz" class="link">info@profond.cz</a></li>
                 <li><i class="fa fa-facebook"></i><a href="http://nasfacebook.cz" class="link" style="color:white;">ProFondCZ</a></li>
@@ -98,7 +202,7 @@
          
             <div class="inlineblock" style="width: 49%; color: white;">
               <div class="napistenam">
-                  <a href="kontakt.html" class="link">
+                  <a href="kontakt.php" class="link">
                     <i class="fa fa-file-text-o" ></i>Napište nám
                   </a>
               </div>
@@ -118,7 +222,11 @@
 
           <div class="inlineblock" style="width:49%; color: white;">
               <ul>
-                <li><a href="kontakt.html" class="link" style="color:white"><b>Kontaktujte nás</b></a></li>
+                <li><a href="kontakt.php
+
+
+
+" class="link" style="color:white"><b>Kontaktujte nás</b></a></li>
                 <li><i class="fa fa-phone"></i>739 154 548</li>
                 <li><i class="fa fa-envelope-o"></i><a href="mailto:info@profond.cz" class="link">info@profond.cz</a></li>
                 <li><i class="fa fa-facebook"></i><a href="http://nasfacebook.cz" class="link" style="color:white;">ProFondCZ</a></li>
@@ -150,7 +258,11 @@
 
         <div class="inlineblock" style="width:49%; color: white;">
             <ul>
-              <li><a href="kontakt.html" class="link" style="color:white"><b>Kontaktujte nás</b></a></li>
+              <li><a href="kontakt.php
+
+
+
+"class="link" style="color:white"><b>Kontaktujte nás</b></a></li>
               <li><i class="fa fa-phone"></i>739 154 548</li>
               <li><i class="fa fa-envelope-o"></i><a href="mailto:info@profond.cz" class="link">info@profond.cz</a></li>
               <li><i class="fa fa-facebook"></i><a href="http://nasfacebook.cz" class="link" style="color:white;">ProFondCZ</a></li>
@@ -179,10 +291,14 @@
     
     
   </div>
-
+<script src="../_js/mycode.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="../_js/ang.js"></script>
+<script src="../_js/DemoController.js"></script>
+<script src="../_js/jquery-ui.js"></script>
+
 
   </body>
 </html>

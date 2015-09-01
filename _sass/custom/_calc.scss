@@ -1,0 +1,16 @@
+#calc {
+    > .nav-tabs {
+        margin: 0px;
+        > li {
+            > a {
+            }
+        }
+        & .active { 
+            > a {
+                background-color: $lightbluecolor; 
+                font-weight: bold;
+                color: black;
+            }
+        }
+    }
+}

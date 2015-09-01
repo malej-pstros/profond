@@ -4,213 +4,375 @@ $secondline-border-outer: #99A637;
 .topblockroot{
     background-color: #FEFEFE;
     @media screen and (min-width: $screen-xs-min) { margin-top: 1.05vmin; }
-                    
+    margin-bottom: 12px;
+               
     > .container {
-        > .row {
-            
-            
-            > :nth-child(1) {
-                padding: 0px 0px;
+            > .row {
+            height: 699px;
+            @media screen and (max-width: $screen-md-min){
+                font-size: 2.4vw;
                 
-                > .bigcover {
-                    background-image: url('../../_media/nova_zelena.jpg'); 
-                    background-position: bottom; 
-                    background-size:cover;
-                    height: auto;
-    
-                    #index_topblock{
-                            background-color: rgba(245, 245, 245, .06);
-                            margin: auto;
-                            padding: 1% 2% 1% 2%;
+                @media screen and (max-width: 610px){
+                    font-size: 3.1vw; 
+                    
+                    @media screen and (max-width: 450px){
+                        font-size: 4.2vw; 
+                    } 
+                } 
+            } 
+            &:nth-child(1) { //first COLUMN (jumbo + 3icons)
+                
+                > :nth-child(1) {  //starts with icons
+                    padding: 0px 0px;
+                    
+                    > #index_buttons {
+                        height: auto;
+                        background-color: #FFF0C5;
+                        padding: 8px;
+                        margin-top: 5px;
+                        vertical-align: top;
+                        > .index_button {
                             
-                            .firstline > div >p {
-                                font-size: 2,8vmin; 
-                                color: #FEFEFE; 
-                                margin: 0px 0px;
-                                margin-top: 8px;
-                                text-shadow: 0 0 5px #675197; 
-                                > .prcntg {
-                                    color: #F98D1C;
-                                    font-weight : bold;
-                                }
-                                > .zelusp {
-                                    color: #B5DDB3;
-                                }
+                            &:hover {
+                                background-color: white !important;
+                                > .tablekek &:nth-child(1) { color: black !important; }
                             }
                             
-                            > .progress {
-                                min-height: 65px; 
-                                border: 2px solid #FEFEFE;
-                                background-color: #E7E7E7;
-                                @media screen and (min-width: $screen-md-min){
-                                    width: 98.5%;
-                                } 
-                                @media screen and (max-width: $screen-md-min){
-                                    height: 80px;
-                                } 
+                            &:nth-child(1) { margin-left: 5px; }
+                            display: table-cell ;                 
+                            margin-right: 10px;
+                            width: 30.5%;
+                            background-color: rgba(255, 157, 63, .0);
+                            padding: 18px;
+
+                            > .tablekek {                // FOR ALL BUTTONS
+                                padding: 0px;
+                                width: 90%;
                                 margin: auto;
-                                margin-bottom: 10px;
-                                > div {
-                                    padding-left: 4px;
-                                    padding-right: 4px;
-                                    > div {
-                                        color: #353F4C !important;
-                                        text-shadow: 0 0 5px #E7E7E7;
-                                        font-weight:bold;
-                                        max-font-size: 22px !important;
-                                        > .goner { color: #F98D1C; }
-                                        > .totalfund { color: #5CC45C; }
-                                        > span { text-shadow: 0 0 5px #596574; font-weight: bold;}
-                                        font-size: 1.4vw;
+                                font-size: 30px;
+                                &:nth-child(1){            // THE ICON DIV
+                                    > .tablecell {
+                                        padding: 3px;
+                                        color: $darkbluecolor;
+                                        text-align: center;
+                                        width: 100%;
+                                        //border: 1px dotted black;
+                                        float: clear;
                                         
-                                        @media screen and (max-width: $screen-md-min){
-                                            font-size: 2.4vw;
+                                        > div {            // 
                                             
-                                            @media screen and (max-width: 610px){
-                                                font-size: 3.1vw; 
-                                                
-                                                @media screen and (max-width: 450px){
-                                                    font-size: 4.2vw; 
-                                                } 
-                                            } 
+                                            display: block;
+                                            > i {
+                                                font-size: 160px;
+                                                &.routericon { font-size: 150px; margin-top: 5px; margin-bottom: 5px;}
+                                                padding: 0px 0px 0px 0px !important;
+                                                margin: -10px -10px -10px -10p!important;
+                                                vertical-align: top;
+                                            }
                                         }
-                                        
                                     }
                                 }
                                 
-                                > div {
-                                    border-right: 1px solid #FEFEFE;
-                                }
-                            }
-                            .secondline { margin-bottom: 8px; }
-                            .secondline > div >p {
-                                
-                                -webkit-margin-before: 0em;
-                                -webkit-margin-after: 0em;
-                                border: 2px solid transparent;
-                                font-size: 26px; 
-                                color: #E88F32; 
-                                margin: auto;
-                                padding-top: 4px;
-                                padding-bottom: 4px;
-                                font-weight: bold;
-                                margin-top: 14px;
-                                text-shadow: 0 0 5px #353F4C;
-                                text-shadow: -2px 0 $secondline-border-outer, 0 2px $secondline-border-outer, 2px 0 $secondline-border-outer, 0 -2px $secondline-border-outer;
-                                text-shadow: -1px 0 $secondline-border, 0 1px $secondline-border, 1px 0 $secondline-border, 0 -1px $secondline-border;
-                                width: 96.3%;
-                                letter-spacing: 1px;
-                                background-color: rgba(247, 249, 187, .6) !important;
-                                
-                                @media screen and (min-width: $screen-md-min){
-                                
-                                    margin: auto;
-                                    margin-top: 14px;
-                                    width:100%;
-                                } 
-                            }
-                            
-                            .firstbutton {
-                                height: 85px; 
-                                width:35%; 
-                                min-width: 140px;
-                                border: 3px solid #FEFEFE;  
-                                font-weight: 600 !important; 
-                                color: #FEFEFE; 
-                                font-size: 1.6vw;
-                                background-color: rgba(46, 133, 28, .1);
-                                text-shadow: 0 0 5px #414D5C;
-                                
-                                margin-right: 10px;
-                                @media screen and (min-width: $screen-xs-min){
-                                    margin-right: 8%;  
-                                }
-                                
-                                &:hover{ background-color: rgba(46, 133, 28, .4); }
-                            }
-                            
-                            .secondbutton{
-                                height: 85px; 
-                                display: inline-block;
-                                width:35%; 
-                                min-width: 140px;
-                                font-weight: 500 !important; 
-                                font-size: 1.6vw;
-                                background-color: rgba(139, 140, 143, .65);
-                                color: #FEFEFE;
-                                border: 2px solid #626D7C;
-                                white-space: normal;
-                                
-                                text-shadow: 0 0 1px white;
-                                line-break: auto !important; 
-                                &:hover{ background-color: rgba(139, 140, 143, .35); }
-                                
-                                @media screen and (max-width: $screen-lg-min){
-                                    font-size: 2.1vw; 
-                               
-                                    @media screen and (max-width: 1020px){
-                                        font-size: 2.4vw; 
-                                    } 
-                                }
-                            }
-                            
-                            .btn {
-                                @media screen and (max-width: 677px){
-                                        height: 85px !important; 
-                                    } 
-                                
-                                > p { 
-                                    margin-bottom: 0px; 
-                                    @media screen and (max-width: 950px){
-                                        font-size: 22px !important; 
+                                 &:nth-child(2){            // THE TEXT DIV
+                                    margin-top: 4px;
+                                    > .tablecell {
+                                        padding: 3px;
+                                        color: $darkbluecolor;
+                                        text-align: center;
+                                        background-color: rgba(1, 240, 240, .0);
+                                        width: 100%;
+
                                         
-                                    } 
+                                        > div {
+                                            
+                                            vertical-align: center;
+                                            > p {
+                                                font-size: 30px;
+                                            
+                                                
+                                            }
+                                        }
+                                    }
                                 }
                             }
-                            
-                            >.row {
-                                margin-bottom: 15px;
-                            }
+                        }
                     }
-                }
-            }         // FIRST GRID CELL 
-            
-            > :nth-child(2) {             // SECOND GRID CELL
-                background-color: rgba(250, 250, 250, .8) ;
-; 
-                height: 450px;
+                    
+                    
+                    > .bigcover {
+                        background-image: url('../../_media/nova_zelena.jpg'); 
+                        background-position: bottom; 
+                        background-size:cover;
+
+                        > #index_topblock{
+                                background-color: rgba(245, 245, 245, .06);
+                                margin: auto;
+                                padding: 1% 2% 1% 2%;
+                                
+                                .firstline > div >p {
+                                    font-size: 2,8vmin; 
+                                    color: #FEFEFE; 
+                                    margin: 0px 0px;
+                                    margin-top: 8px;
+                                    text-shadow: 0 0 5px #675197; 
+                                    > .prcntg {
+                                        color: #F98D1C;
+                                        font-weight : bold;
+                                    }
+                                    > .zelusp {
+                                        color: #B5DDB3;
+                                    }
+                                }
+                                
+                                > .progress {
+                                    min-height: 65px; 
+                                    border: 2px solid #FEFEFE;
+                                    background-color: #E7E7E7;
+                                    @media screen and (min-width: $screen-md-min){
+                                        width: 98.5%;
+                                    } 
+                                    @media screen and (max-width: $screen-md-min){
+                                        height: 80px;
+                                    } 
+                                    margin: auto;
+                                    margin-bottom: 10px;
+                                    > div {
+                                        padding-left: 4px;
+                                        padding-right: 4px;
+                                        > div {
+                                            color: #353F4C !important;
+                                            text-shadow: 0 0 5px #E7E7E7;
+                                            font-weight:bold;
+                                            max-font-size: 22px !important;
+                                            > .goner { color: #F98D1C; }
+                                            > .totalfund { color: #5CC45C; }
+                                            > span { text-shadow: 0 0 5px #596574; font-weight: bold;}
+                                            font-size: 1.4vw;
+                                            
+                                            @media screen and (max-width: $screen-md-min){
+                                                font-size: 2.4vw;
+                                                
+                                                @media screen and (max-width: 610px){
+                                                    font-size: 3.1vw; 
+                                                    
+                                                    @media screen and (max-width: 450px){
+                                                        font-size: 4.2vw; 
+                                                    } 
+                                                } 
+                                            }
+                                            
+                                        }
+                                    }
+                                    
+                                    > div {
+                                        border-right: 1px solid #FEFEFE;
+                                    }
+                                }
+                                .secondline { margin-bottom: 8px; }
+                                .secondline > div >p {
+                                    
+                                    -webkit-margin-before: 0em;
+                                    -webkit-margin-after: 0em;
+                                    border: 2px solid transparent;
+                                    font-size: 26px; 
+                                    color: #E88F32; 
+                                    margin: auto;
+                                    padding-top: 4px;
+                                    padding-bottom: 4px;
+                                    font-weight: bold;
+                                    margin-top: 14px;
+                                    text-shadow: 0 0 5px #353F4C;
+                                    text-shadow: -2px 0 $secondline-border-outer, 0 2px $secondline-border-outer, 2px 0 $secondline-border-outer, 0 -2px $secondline-border-outer;
+                                    text-shadow: -1px 0 $secondline-border, 0 1px $secondline-border, 1px 0 $secondline-border, 0 -1px $secondline-border;
+                                    width: 96.3%;
+                                    letter-spacing: 1px;
+                                    background-color: rgba(247, 249, 187, .6) !important;
+                                    
+                                    @media screen and (min-width: $screen-md-min){
+                                    
+                                        margin: auto;
+                                        margin-top: 14px;
+                                        width:100%;
+                                    } 
+                                }
+                                
+                                .firstbutton {
+                                    height: 85px; 
+                                    width:35%; 
+                                    min-width: 140px;
+                                    border: 3px solid #FEFEFE;  
+                                    font-weight: 600 !important; 
+                                    color: #FEFEFE; 
+                                    font-size: 1.6vw;
+                                    background-color: rgba(46, 133, 28, .1);
+                                    text-shadow: 0 0 5px #414D5C;
+                                    
+                                    margin-right: 10px;
+                                    @media screen and (min-width: $screen-xs-min){
+                                        margin-right: 8%;  
+                                    }
+                                    
+                                    &:hover{ background-color: rgba(46, 133, 28, .4); }
+                                }
+                                
+                                .secondbutton{
+                                    height: 85px; 
+                                    display: inline-block;
+                                    width:35%; 
+                                    min-width: 140px;
+                                    font-weight: 500 !important; 
+                                    font-size: 1.6vw;
+                                    background-color: rgba(139, 140, 143, .65);
+                                    color: #FEFEFE;
+                                    border: 2px solid #626D7C;
+                                    white-space: normal;
+                                    
+                                    text-shadow: 0 0 1px white;
+                                    line-break: auto !important; 
+                                    &:hover{ background-color: rgba(139, 140, 143, .35); }
+                                    
+                                    @media screen and (max-width: $screen-lg-min){
+                                        font-size: 2.1vw; 
+                                   
+                                        @media screen and (max-width: 1020px){
+                                            font-size: 2.4vw; 
+                                        } 
+                                    }
+                                }
+                                
+                                .btn {
+                                    @media screen and (max-width: 677px){
+                                            height: 85px !important; 
+                                        } 
+                                    
+                                    > p { 
+                                        margin-bottom: 0px; 
+                                        @media screen and (max-width: 950px){
+                                            font-size: 22px !important; 
+                                            
+                                        } 
+                                    }
+                                }
+                                
+                                >.row {
+                                    margin-bottom: 15px;
+                                }
+                        }
+                    }
+                }         // FIRST GRID CELL 
+            }
+           > :nth-child(2) {             // SECOND COLUMN ( the lady stack)
+                
                 padding: 0px 0px;
+                @media screen and (max-width: 610px){
+                    font-size: 3.1vw; 
+                    
+                    @media screen and (max-width: 450px){
+                    } 
+                }
                 
                 > :nth-child(1) {         // TABLE DIV
+                    height: 55px;
+
+                    
                     width: 100%;
-                    background-color: rgba(65, 77, 92, .8) ;
+                    background-color: $darkgreycolor;
+                    color: $almostwhite;
+                    margin-bottom: 5px;
+                    
+                    @media screen and (max-width: $screen-md-min){
+                        font-size: 2.4vw;
+                        
+                        @media screen and (max-width: 610px){
+                            font-size: 3.1vw; 
+                            
+                            @media screen and (max-width: 450px){
+                                font-size: 4.2vw; 
+                            } 
+                        } 
+                    } 
                     
                     > .tablecell > p {
                         margin-bottom: 0px;
                         padding: 4px 4px;
                         font-size: 1.6vw;           
-                        @media screen and (max-width: $screen-md-min){
-                            font-size: 2.4vw;
-                            
-                            @media screen and (max-width: 610px){
-                                font-size: 3.1vw; 
-                                
-                                @media screen and (max-width: 450px){
-                                    font-size: 4.2vw; 
-                                } 
-                            } 
-                        } 
                             
                     }
                     
                     
                 }
+                
+                > :nth-child(2) {         // TABLE DIV
+                    
+                    background-image: url('../../_media/callgirl.jpg'); 
+                    background-position: center; 
+                    background-size:cover;
+                    margin-bottom: 5px;
+
+                    height: 394px;
+                    
+                    width: 100%;
+                    background-color: rgba(65, 77, 92, .8) ;
+                    font-size: 60px;
+                    @media screen and (max-width: $screen-md-min){
+                        font-size: 2.4vw;
+                        
+                        @media screen and (max-width: 610px){
+                            font-size: 3.1vw; 
+                            
+                            @media screen and (max-width: 450px){
+                                font-size: 4.2vw; 
+                            } 
+                        } 
+                    } 
+                    
+                    > .tablecell > p {
+                        margin-bottom: 0px;
+                        padding: 4px 4px;
+                        font-size: 1.6vw;           
+                            
+                    }
+                    
+                    
+                }
+                
+                > :nth-child(3) {         // TABLE DIV
+                    width: 100%;
+                    background-color: $firstorange;
+                    color: white;
+                    height: 310px;
+                    
+                     
+                    
+                    @media screen and (max-width: $screen-md-min){
+                        font-size: 2.4vw;
+                        
+                        @media screen and (max-width: 610px){
+                            font-size: 3.1vw; 
+                            
+                            @media screen and (max-width: 450px){
+                                font-size: 4.2vw; 
+                            } 
+                        } 
+                    } 
+                    
+                    > .tablecell > p {
+                        margin-bottom: 0px;
+                        padding: 4px 4px;
+                        font-size: 1.6vw;           
+                            
+                    }
+                    
+                    
+                }
+                
+                
             }
             
             @media screen and (min-width: $screen-md-min){
-                > :nth-child(1) { padding-right: 0.6vmin; }
-                > :nth-child(2) { padding-left: 0.6vmin; background-clip: content-box; padding-right: 0px; margin-right: 0px; }
+                > :nth-child(1) { padding-right: 4px; }
+                > :nth-child(2) { padding-left: 4px; background-clip: content-box; padding-right: 0px; margin-right: 0px; }
             } 
-        } 
+        }
     }
 }
